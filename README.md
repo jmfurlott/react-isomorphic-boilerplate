@@ -2,6 +2,8 @@
 
 This project serves as either a **very simple** boilerplate to start building an isomorphic application in React.js or as an example of one way that it can be done.
 
+Please see the [walkthrough](http://jmfurlott.com/tutorial-setting-up-a-simple-isomorphic-react-app/) for a more thorough explanation of the code.
+
 ## Stack
 
 - React.js
