@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf lib",
     "dev-server": "node lib/server/webpack",
     "server": "nodemon lib/server/server",
-    "start": "npm run dev-server & npm run server",
-    "build": "./node_modules/.bin/babel src -d lib --experimental"
+    "start": "npm run build && npm run dev-server & npm run server",
+    "build": "npm run clean && ./node_modules/.bin/babel src -d lib --experimental"
   },
   "keywords": [
     "isomorphic",
@@ -25,6 +26,7 @@
     "jade": "^1.10.0",
     "node-libs-browser": "^0.5.2",
     "react": "^0.13.3",
+    "react-router": "^0.13.3",
     "webpack": "^1.9.10",
     "webpack-dev-server": "^1.9.0"
   },
