@@ -28,3 +28,7 @@ When the servers are started, visit `http://localhost:3000` to see a Hello world
 - Improve the build task system. Using `npm scripts` is definitely the simplest but a quick look at the `package.json` shows how complicated it can quickly become.
 - Separate out `dev` and `prod` environments using Jade and multiple webpack configuration files
 - Improve the hierarchy of the folders. `server` is a mess right now and should be cleaned up/separated into a structure that makes more sense and is easier to maintain.
+
+## Thanks
+
+While outdated, this repo was heavily inspired by [acdlite](http://github.com/acdlite) and his [demo app for flummox](https://github.com/acdlite/flummox-isomorphic-demo) 
