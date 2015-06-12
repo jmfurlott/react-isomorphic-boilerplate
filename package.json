@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev-server": "node lib/server/webpack",
+    "server": "nodemon lib/server/server",
+    "start": "npm run dev-server & npm run server",
     "build": "./node_modules/.bin/babel src -d lib --experimental"
   },
   "keywords": [
