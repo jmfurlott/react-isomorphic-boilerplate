@@ -7,9 +7,13 @@ const app = express();
 app.set('views', './views');
 app.set('view engine', 'jade');
 
-app.get('/', function (req, res) {
+import routes from "../shared/routes";
 
-  res.render('index', { title: 'hey', message: 'world' });
+app.get('/', function (req, res) {
+  Router.run(routes, req.url, Handler => {
+    let content = React.renderToString(<Handler />);
+    res.render('index', { content: content });
+  });
 });
 
 var server = app.listen(3000, function () {
