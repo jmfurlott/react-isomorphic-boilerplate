@@ -1,6 +1,6 @@
 # React Isomorphic Demo app
 
-This project serves as a either a **very simple** boilerplate to building an isomorphic application in React.js or as an example of one way that it can be done.
+This project serves as either a **very simple** boilerplate to start building an isomorphic application in React.js or as an example of one way that it can be done.
 
 ## Stack
 
