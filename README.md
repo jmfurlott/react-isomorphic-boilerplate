@@ -11,6 +11,17 @@ This project serves as either a **very simple** boilerplate to start building an
 - Babel
 - Jade
 
+## Installation instructions
+
+In the project's directory, run the following commands:
+
+```
+$ npm install
+$ npm start
+```
+
+When the servers are started, visit `http://localhost:3000` to see a Hello world page.
+
 ## Next steps:
 
 - Consider the best way to handle flux. There are many options that work in conjunction with the isomorphic server (namely [flummox](https://github.com/acdlite/flummox) or [fluxible](http://fluxible.io/)).  Both of these projects go into great detail about how to add their libraries into an isomorphic app.
