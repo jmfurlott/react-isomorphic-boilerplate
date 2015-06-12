@@ -2,14 +2,14 @@
   "name": "isomorphic-demo",
   "version": "0.0.1",
   "description": "A boilerplate for isomorphic React apps",
-  "main": "index.js",
+  "main": "lib/server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf lib",
     "watch-js": "./node_modules/.bin/babel src -d lib --experimental -w",
     "dev-server": "node lib/server/webpack",
     "server": "nodemon lib/server/server",
-    "start": "npm run watch-js && npm run dev-server & npm run server",
+    "start": "npm run watch-js & npm run dev-server & npm run server",
     "build": "npm run clean && ./node_modules/.bin/babel src -d lib --experimental"
   },
   "keywords": [
@@ -27,6 +27,7 @@
     "jade": "^1.10.0",
     "node-libs-browser": "^0.5.2",
     "react": "^0.13.3",
+    "react-hot-loader": "^1.2.7",
     "react-router": "^0.13.3",
     "webpack": "^1.9.10",
     "webpack-dev-server": "^1.9.0"

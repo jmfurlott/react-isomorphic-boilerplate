@@ -7,12 +7,8 @@ import config from "../../webpack.config.dev";
 
 var server = new WebpackDevServer(webpack(config), {
   // webpack-dev-server options
+  publicPath: config.output.publicPath,
   hot: true,
-  quiet: false,
-  noInfo: false,
-  lazy: true,
-  filename: "bundle.js",
-  publicPath: "/assets/",
   stats: { colors: true },
 });
 server.listen(8080, "localhost", function() {});
