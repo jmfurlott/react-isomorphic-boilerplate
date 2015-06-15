@@ -9,7 +9,7 @@ app.set('view engine', 'jade');
 
 import routes from "../shared/routes";
 
-app.get('/', function (req, res) {
+app.get('/*', function (req, res) {
   Router.run(routes, req.url, Handler => {
     let content = React.renderToString(<Handler />);
     res.render('index', { content: content });
